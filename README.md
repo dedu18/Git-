@@ -22,7 +22,12 @@
 	然后同步骤4一样使用【git clone】，最后Push后就不用再输入账号密码验证；或者使用【git remote add origin git@github.com:dedu18/Git-.git】，然后把本地库的所有内容推送到远程库上【git push -u origin master】；
 	
      6、其他常用命令
+	  【git remote add origin 分支】 把当前仓库关联到远程分支上，之后可以使用git push推送内容
       【git remote remove origin】 取消关联的仓库
+	  【git push origin master】 推送本地仓库内容到远程仓库的master分支
+	  【git checkout -b dev】创建分支并切换到这个分支，相当于git branch dev 和 git checkout dev
+	  【git branch】 查看分支，会列出所有的分支
+	  【git branch -d dev】 删除dev分支
       【git status 】 查看此仓库状态
       【git diff 】 查看文件和仓库中的差异
       【git log 】 查看日志
@@ -30,4 +35,5 @@
       【git reflog 】查看命令历史
       【git rm 】删除已提交的文件
       【git pull】如果可以确定什么都没有改过只是更新本地代码
+	  【git merge dev】合并指定分支到当前分支，如可以在master分支上执行此命令，就可以把dev分支上的内容合并到分支master上，
       【git checkout -- 文件 】 把文件在工作区的修改全部撤销，分两种情况（自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；文件已经添加到暂存区后，又作了修改，现在撤销修改就回到添加到暂存区后的状态。）
